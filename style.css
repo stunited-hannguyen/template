@@ -1,0 +1,328 @@
+body {
+  font-size: 30px;
+  font-family: "Kiwi Maru", serif !important;
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.header-nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 2px 5px #808080;
+}
+.header-nav .navbar {
+  padding: 1rem;
+}
+.header-nav .navbar a {
+  color: black;
+  text-decoration: none;
+}
+.header-nav .navbar ul {
+  padding-left: 0 !important;
+}
+.header-nav .navbar ul li:hover {
+  border-radius: 1rem;
+  background-color: #ecbd90;
+}
+.header-nav .navbar .navbar-menu-link ul {
+  margin-bottom: 0 !important;
+  display: flex;
+  font-size: 1rem;
+}
+.header-nav .navbar .navbar-menu-link ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+.header-nav .navbar .navbar-menu-link ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-xl img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.container-xl .banner-info {
+  position: absolute;
+  top: 50vh;
+  left: 10vw;
+  width: 50%;
+  color: white;
+}
+.container-xl .banner-info h1 {
+  font-size: 5vw;
+  text-shadow: 0.5rem 0.5rem 1rem #808080;
+}
+.container-xl .banner-info button {
+  margin-top: 1rem;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 1rem;
+  box-shadow: 0.1rem 0.3rem 0.5rem #808080;
+}
+.container-xl .banner-info button:hover {
+  padding: 1.3rem;
+  transition: 0.5s;
+}
+
+.best-sellers .best-sellers-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.best-sellers .best-sellers-items .item {
+  position: relative;
+  margin: 1rem;
+  width: 30%;
+  text-align: center;
+}
+.best-sellers .best-sellers-items .item span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  color: white;
+  background-color: firebrick;
+}
+.best-sellers .best-sellers-items .item img {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.best-sellers .best-sellers-items .item:hover {
+  cursor: pointer;
+  box-shadow: 0.1rem 0.3rem 0.5rem #808080;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.center-cookies {
+  position: relative;
+}
+.center-cookies h5 {
+  background-color: white;
+  display: inline-block;
+  padding: 0.7rem;
+  border: 2px solid #818181;
+}
+.center-cookies hr {
+  position: absolute;
+  width: 96%;
+  z-index: -1;
+  top: 10%;
+  border: 0.5px solid black;
+  opacity: 0.5;
+}
+
+.more-bites .grid-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  /* Animation */
+}
+.more-bites .grid-items img {
+  padding: 0.5rem;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.more-bites .grid-items img:hover {
+  transform: scale(1.1);
+  transform: 3s;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+.services .item {
+  cursor: pointer;
+  width: 33%;
+  text-align: center;
+  padding: 0.5rem;
+}
+.services .item a {
+  font-size: 0.5rem;
+}
+.services .item a img {
+  width: 20%;
+  height: auto;
+}
+.services .item i {
+  font-size: 4rem;
+}
+.services .item:nth-child(2) {
+  border-left: 2px solid #797777;
+  border-right: 2px solid #868585;
+}
+
+footer {
+  padding-top: 2rem;
+  background-color: #fae1e5;
+}
+footer .info-footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .info-footer ul li:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+footer .info-footer ul li {
+  padding: 0.2rem;
+  list-style: none;
+}
+footer .info-footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer .info-footer .footer-subscribe input {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+footer .info-footer .footer-subscribe button {
+  background-color: #ff8196;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+}
+footer .social {
+  display: flex;
+  justify-content: space-between;
+}
+footer .social .social-icons a {
+  color: black;
+  padding: 0.5rem;
+}
+
+.fa-plus {
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .navbar .navbar-menu-link {
+    display: none;
+  }
+
+  .best-sellers .best-sellers-items {
+    flex-direction: column;
+  }
+  .best-sellers .best-sellers-items .item {
+    width: 100%;
+  }
+  .best-sellers .best-sellers-items .item img {
+    width: 100%;
+  }
+
+  .more-bites .grid-items {
+    grid-template-columns: auto;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+  .services .item {
+    width: 100%;
+  }
+  .services .item:nth-child(2) {
+    border-top: 2px solid #797777;
+    border-bottom: 2px solid #868585;
+    border-left: none;
+    border-right: none;
+  }
+
+  footer .info-footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer .info-footer .footer-menu {
+    display: none;
+  }
+  footer .info-footer .footer-address {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  footer .info-footer .footer-subscribe {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  footer .info-footer .footer-open-hour {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .navbar .navbar-menu-link {
+    display: none;
+  }
+
+  .best-sellers .best-sellers-items {
+    flex-direction: column;
+  }
+  .best-sellers .best-sellers-items .item {
+    width: 100%;
+  }
+  .best-sellers .best-sellers-items .item img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dropdown {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .responsive {
+    position: relative;
+  }
+
+  .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header-nav .responsive {
+    flex-direction: column;
+    float: left;
+    text-align: left;
+  }
+  .header-nav .responsive .logo {
+    display: none;
+  }
+  .header-nav .responsive .navbar-menu-link {
+    display: block;
+    text-align: left;
+  }
+  .header-nav .responsive .navbar-menu-link ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-nav .responsive .navbar-menu-link ul li {
+    align-self: start;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .more-bites .grid-items {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
